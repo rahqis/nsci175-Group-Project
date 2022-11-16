@@ -111,13 +111,25 @@ const App = () => {
       {/* {false && <Route path="/blog" exact component={Blog} />}
       {false && <Route path="/blog/:id" component={BlogPost} />} */}
       <Footer>
-        {getInTouch.show && (
-          <GetInTouch
-            heading={getInTouch.heading}
-            message={getInTouch.message}
-            email={getInTouch.email}
-          />
-        )}
+        <GetInTouch
+          heading={"Resources"}
+          message={"Sade Spencer"}
+          email={"https://www.spencerlabatumn.com/"}
+        />
+        <GetInTouch
+          message={"Ida Momennejad"}
+          email={"https://www.parsingscience.org/2019/07/23/momennejad-duker/"}
+        />
+        <GetInTouch
+          message={"Tufikameni Brima"}
+          email={
+            "https://www.urmc.rochester.edu/people/29762972-tufikameni-brima"
+          }
+        />
+        <GetInTouch
+          message={"Gina Turrigiano"}
+          email={"https://www.spencerlabatumn.com/"}
+        />
       </Footer>
     </BrowserRouter>
   );
